@@ -5,17 +5,18 @@
 
 const compareToTen = (num) => {
   myPromise = new Promise((resolve, reject) => {
+    num = num + 12;
     if (num > 10) {
-      resolve(num + ' is greater than 10, success!');
+      resolve(num + " is greater than 10, success!");
     } else {
-      reject(num + ' is less than 10, error!');
+      reject(num + " is less than 10, error!");
     }
   });
   return myPromise;
 };
 
 // Calling the Promise
-compareToTen(15)
+compareToTen(wefwef)
   .then((result) => console.log(result))
   .catch((error) => console.log(error));
 
